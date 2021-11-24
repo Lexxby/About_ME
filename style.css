@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,200;1,400&family=Roboto&display=swap');
 
 a {
   color: #000;
@@ -11,7 +11,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .heading {
@@ -28,11 +28,19 @@ body {
 .logo img {
   width: 200px;
   padding: 5px;
-  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
-    1px 1px 5px rgba(255, 255, 255, 1);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 600px) {
+  .heading {
+    text-align: center;
+  }
+  .logo {
+    border-radius: 40px;
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
   .logo img {
     width: 150px;
     padding-top: 10px;
@@ -57,6 +65,9 @@ body {
 }
 
 .container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .container > div {
@@ -121,7 +132,9 @@ h3 {
 }
 
 .footer {
-  margin-bottom: 20px;
+  width: 95%;
+  display: block;
+  margin: 0 auto 10px;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 2px 2px 10px 1px #057d9f;
